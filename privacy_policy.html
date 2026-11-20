@@ -35,7 +35,7 @@
 <div class="wrap">
   <header>
     <h1><span class="accent">Carkyz</span> — Privacy Policy</h1>
-    <div class="sub">Last updated: 25 July 2026</div>
+    <div class="sub">Last updated: 20 November 2026</div>
     <nav>
       <a href="#en">English</a>
       <a href="#ru">Русский</a>
@@ -51,47 +51,78 @@
 
     <h3>The short version</h3>
     <p>Carkyz is a vehicle-maintenance tracker that works <strong>on your device</strong>. Your vehicles,
-       mileage, and service records are stored locally on your phone. There is no account, no login, and no
-       cloud sync. We do not sell your data and we do not show ads.</p>
+       mileage, service records, fuel entries and documents are stored locally on your phone. There is no
+       Carkyz account and no Carkyz server that holds your data. Photos of the odometer and of fuel receipts are
+       read on your phone and are never uploaded. We do not sell your data and we do not show ads.</p>
 
     <h3>Data stored on your device</h3>
-    <p>Everything you enter — vehicle names and details, current mileage and mileage history, service nodes
-       and intervals, service records, costs, and reminder settings — is stored only in a local database on
-       your device. We have no access to it.</p>
+    <p>Everything you enter — vehicle names and details, mileage and its history, service nodes and intervals,
+       service records, fuel entries, costs, documents and their dates, notes, and reminder settings — is stored
+       only in a local database on your device. We have no access to it.</p>
+
+    <h3>Camera and photos</h3>
+    <p>You can photograph the odometer to fill in the mileage, or a fuel receipt to fill in liters, amount and
+       date — with the camera or by choosing one photo from your gallery through the system photo picker. The
+       text is recognised <strong>on your device</strong> (Apple Vision on iPhone, Google ML Kit built into the
+       app on Android). The photo is used only for this, is not kept after it has been read, and is
+       <strong>never sent</strong> to us or anyone else. Carkyz sees only the photo you choose, not your whole
+       gallery.</p>
+
+    <h3>Automatic backup to your own cloud (optional)</h3>
+    <p>If you turn on automatic backup, Carkyz saves a copy of your data as a file in <strong>your own</strong>
+       cloud storage: iCloud Drive on iPhone, Google Drive on Android. On Android you sign in with Google and
+       grant access; Carkyz can see only the files it created itself (not the rest of your Drive) and your
+       Google account email, which it shows so you know where the copy goes. The copy is stored under your
+       account, under Apple's or Google's terms; the developer never receives it. You can turn backup off at any
+       time and delete the copies from your cloud.</p>
+
+    <h3>Manual backups</h3>
+    <p>You can export a backup file and import it later. The file is created on your device and shared only where
+       <em>you</em> choose through your device's own share sheet. The developer never receives your backups.</p>
+
+    <h3>Purchases (Premium)</h3>
+    <p>Payments are handled entirely by the App Store or Google Play; we never see your card or payment details.
+       To know whether Premium is active and to restore purchases, the app uses
+       <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat</a> (RevenueCat, Inc.),
+       which receives the purchase receipt from the store together with a random app user ID that is not linked to
+       your name or email.</p>
 
     <h3>Crash &amp; error reporting (Sentry)</h3>
-    <p>To find and fix bugs, the app may send anonymous technical crash reports to
+    <p>To find and fix bugs, the app sends anonymous technical crash reports to
        <a href="https://sentry.io" target="_blank" rel="noopener">Sentry</a> (Functional Software, Inc.),
        processed on servers in the European Union. A report may include: the error and its stack trace, your
        device model, operating-system version, and the app version. These reports <strong>do not include your
-       vehicles, mileage, service records, or any content you entered.</strong></p>
-    <p class="muted">Crash reporting can be turned off in a build of the app that ships with an empty Sentry
-       key; when disabled, the app makes no network connections at all.</p>
+       vehicles, mileage, records, photos, or any content you entered</strong>, nor your IP address or device
+       name.</p>
+
+    <h3>Anonymous scan statistics (can be turned off)</h3>
+    <p>To see in which countries receipts and odometers are read well and where they are not, the app counts
+       scans through the same Sentry service. For each scan it sends only: whether it was an odometer or a
+       receipt, the result (read fully, partly or not at all; kept as read or corrected), and your phone's
+       language and region setting (for example <code>de_AT</code>). It sends <strong>no photo, no text, no
+       numbers from the receipt, and no identifier</strong> of you or your device. You can turn this off in the
+       app menu: <em>Anonymous scan statistics</em>.</p>
 
     <h3>Notifications</h3>
     <p>Service reminders are <strong>local notifications</strong> scheduled on your device. They are not sent
-       from any server and contain only the reminder text you would expect (which vehicle and which service).</p>
-
-    <h3>Backups</h3>
-    <p>You can export a backup file and import it later. The backup is created on your device and shared only
-       where <em>you</em> choose to send it through your device's own share sheet (for example, to your files
-       or email). The developer never receives your backups.</p>
+       from any server.</p>
 
     <h3>Permissions we request and why</h3>
     <ul>
+      <li><strong>Camera</strong> — to photograph the odometer or a fuel receipt (only when you tap the camera).</li>
+      <li><strong>Photos</strong> — to choose one photo of the odometer or a receipt (system photo picker).</li>
       <li><strong>Notifications</strong> — to show service reminders.</li>
-      <li><strong>Exact alarms / scheduling</strong> — so reminders fire at the right time.</li>
       <li><strong>Run after restart (boot)</strong> — to restore your reminders after the phone reboots.</li>
       <li><strong>Vibration</strong> — for notification feedback.</li>
-      <li><strong>Ignore battery optimization (optional)</strong> — to keep reminders reliable on aggressive
-          power-saving devices. You can decline this.</li>
+      <li><strong>Internet</strong> — for backup to your cloud, purchases, crash reports and scan statistics.</li>
     </ul>
-    <p class="muted">Carkyz does not request location, camera, microphone, contacts, or any advertising
-       identifiers.</p>
+    <p class="muted">Carkyz does not request location, microphone, contacts, or any advertising identifiers,
+       and does not track you across other apps or websites.</p>
 
     <h3>Data retention and deletion</h3>
-    <p>Because your data lives only on your device, you are in full control: delete individual items in the app,
-       or uninstall the app to remove all of its data. Crash reports held by Sentry follow Sentry's own retention
+    <p>Data on your device: delete individual items in the app, or uninstall the app to remove all of it. Backup
+       copies in your cloud: delete them from iCloud Drive or Google Drive (folder <code>Carkyz</code>). Crash
+       reports and scan statistics held by Sentry are anonymous and kept according to Sentry's retention
        schedule.</p>
 
     <h3>Children</h3>
@@ -114,48 +145,78 @@
 
     <h3>Коротко</h3>
     <p>Carkyz — приложение для учёта обслуживания транспорта, которое работает <strong>на вашем
-       устройстве</strong>. Ваши машины, пробег и записи об обслуживании хранятся локально в телефоне. Нет
-       аккаунта, нет входа, нет облачной синхронизации. Мы не продаём ваши данные и не показываем рекламу.</p>
+       устройстве</strong>. Машины, пробег, записи об обслуживании, заправки и документы хранятся в телефоне.
+       Аккаунта Carkyz и сервера Carkyz с вашими данными нет. Фото одометра и чеков заправки распознаются на
+       телефоне и никуда не отправляются. Мы не продаём ваши данные и не показываем рекламу.</p>
 
     <h3>Данные, хранящиеся на устройстве</h3>
-    <p>Всё, что вы вводите — названия и параметры машин, текущий пробег и историю пробега, узлы обслуживания и
-       интервалы, записи о ТО, стоимость, настройки напоминаний — хранится только в локальной базе данных на
-       вашем устройстве. У нас нет к этому доступа.</p>
+    <p>Всё, что вы вводите — названия и параметры машин, пробег и его история, узлы обслуживания и интервалы,
+       записи о ТО, заправки, расходы, документы и их сроки, заметки, настройки напоминаний — хранится только в
+       локальной базе данных на вашем устройстве. У нас нет к этому доступа.</p>
+
+    <h3>Камера и фото</h3>
+    <p>Можно сфотографировать одометр, чтобы заполнить пробег, или чек заправки, чтобы заполнить литры, сумму и
+       дату, — камерой или выбрав одно фото из галереи через системное окно выбора. Текст распознаётся
+       <strong>на телефоне</strong> (Apple Vision на iPhone, встроенный в приложение Google ML Kit на Android).
+       Фото используется только для этого, не хранится после распознавания и <strong>никуда не
+       отправляется</strong> — ни нам, ни кому-либо ещё. Carkyz видит только выбранное вами фото, а не всю
+       галерею.</p>
+
+    <h3>Автокопия в ваше облако (по желанию)</h3>
+    <p>Если включить автокопию, Carkyz сохраняет копию данных файлом в <strong>вашем</strong> облаке: в iCloud
+       Drive на iPhone, на Google Диске на Android. На Android вы входите через Google и даёте доступ; Carkyz видит
+       только файлы, которые создал сам (а не весь Диск), и адрес почты аккаунта — чтобы показать, куда идёт
+       копия. Копия хранится в вашем аккаунте на условиях Apple или Google; разработчик её не получает. Автокопию
+       можно выключить в любой момент, а копии — удалить из облака.</p>
+
+    <h3>Ручные резервные копии</h3>
+    <p>Можно экспортировать файл резервной копии и позже импортировать его. Файл создаётся на устройстве и
+       передаётся только туда, куда <em>вы</em> сами решите, через системное меню «Поделиться». Разработчик никогда
+       не получает ваши копии.</p>
+
+    <h3>Покупки (Premium)</h3>
+    <p>Оплату полностью проводят App Store или Google Play; данные карты мы не видим. Чтобы знать, активен ли
+       Premium, и восстанавливать покупки, приложение использует
+       <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat</a> (RevenueCat, Inc.):
+       он получает от магазина квитанцию о покупке и случайный номер пользователя приложения, не связанный с
+       вашим именем или почтой.</p>
 
     <h3>Отчёты о сбоях и ошибках (Sentry)</h3>
-    <p>Чтобы находить и исправлять ошибки, приложение может отправлять анонимные технические отчёты о сбоях в
-       <a href="https://sentry.io" target="_blank" rel="noopener">Sentry</a> (Functional Software, Inc.),
-       обработка происходит на серверах в Европейском союзе. Отчёт может содержать: саму ошибку и её трассировку,
-       модель устройства, версию операционной системы и версию приложения. Эти отчёты <strong>не содержат ваши
-       машины, пробег, записи об обслуживании или любой введённый вами контент.</strong></p>
-    <p class="muted">Отчёты о сбоях можно отключить в сборке приложения с пустым ключом Sentry; при отключении
-       приложение вообще не выходит в сеть.</p>
+    <p>Чтобы находить и исправлять ошибки, приложение отправляет анонимные технические отчёты о сбоях в
+       <a href="https://sentry.io" target="_blank" rel="noopener">Sentry</a> (Functional Software, Inc.), обработка
+       — на серверах в Европейском союзе. Отчёт может содержать: ошибку и её трассировку, модель устройства,
+       версию системы и версию приложения. Отчёты <strong>не содержат ваших машин, пробега, записей, фото и
+       любого введённого контента</strong>, а также IP-адреса и имени устройства.</p>
+
+    <h3>Анонимная статистика распознавания (можно выключить)</h3>
+    <p>Чтобы видеть, в каких странах чеки и одометры распознаются хорошо, а в каких плохо, приложение считает
+       распознавания через тот же Sentry. О каждом распознавании уходит только: одометр это или чек, итог
+       (прочитано целиком, частично или ничего; оставлено как есть или исправлено) и язык и регион телефона
+       (например, <code>de_AT</code>). <strong>Без фото, без текста, без чисел с чека и без идентификатора</strong>
+       вас или устройства. Выключается в меню приложения: <em>«Анонимная статистика распознавания»</em>.</p>
 
     <h3>Уведомления</h3>
-    <p>Напоминания об обслуживании — это <strong>локальные уведомления</strong>, запланированные на вашем
-       устройстве. Они не отправляются с сервера и содержат лишь ожидаемый текст напоминания (какая машина и
-       какое обслуживание).</p>
-
-    <h3>Резервные копии</h3>
-    <p>Вы можете экспортировать файл резервной копии и позже импортировать его. Копия создаётся на вашем
-       устройстве и передаётся только туда, куда <em>вы</em> сами решите, через системное меню «Поделиться»
-       (например, в файлы или на почту). Разработчик никогда не получает ваши резервные копии.</p>
+    <p>Напоминания об обслуживании — это <strong>локальные уведомления</strong>, запланированные на устройстве.
+       Они не отправляются с сервера.</p>
 
     <h3>Какие разрешения мы запрашиваем и зачем</h3>
     <ul>
+      <li><strong>Камера</strong> — чтобы сфотографировать одометр или чек заправки (только когда вы нажимаете
+          на камеру).</li>
+      <li><strong>Фото</strong> — чтобы выбрать одно фото одометра или чека (системное окно выбора).</li>
       <li><strong>Уведомления</strong> — чтобы показывать напоминания об обслуживании.</li>
-      <li><strong>Точные будильники / планирование</strong> — чтобы напоминания срабатывали вовремя.</li>
       <li><strong>Запуск после перезагрузки</strong> — чтобы восстановить напоминания после перезапуска телефона.</li>
       <li><strong>Вибрация</strong> — для отклика уведомлений.</li>
-      <li><strong>Отключение оптимизации батареи (необязательно)</strong> — чтобы напоминания были надёжными на
-          устройствах с агрессивным энергосбережением. Можно отказать.</li>
+      <li><strong>Интернет</strong> — для автокопии в ваше облако, покупок, отчётов о сбоях и статистики
+          распознавания.</li>
     </ul>
-    <p class="muted">Carkyz не запрашивает геолокацию, камеру, микрофон, контакты и рекламные идентификаторы.</p>
+    <p class="muted">Carkyz не запрашивает геолокацию, микрофон, контакты и рекламные идентификаторы и не
+       отслеживает вас в других приложениях и на сайтах.</p>
 
     <h3>Хранение и удаление данных</h3>
-    <p>Поскольку данные хранятся только на вашем устройстве, вы полностью ими управляете: удаляйте отдельные
-       записи в приложении или удалите приложение, чтобы стереть все его данные. Отчёты о сбоях в Sentry
-       хранятся согласно собственным срокам Sentry.</p>
+    <p>Данные на устройстве: удаляйте записи в приложении или удалите приложение, чтобы стереть всё. Копии в
+       облаке: удалите их из iCloud Drive или Google Диска (папка <code>Carkyz</code>). Отчёты о сбоях и статистика
+       в Sentry анонимны и хранятся по срокам Sentry.</p>
 
     <h3>Дети</h3>
     <p>Carkyz — утилита общего назначения и не предназначена для детей. Она сознательно не собирает персональные
@@ -176,49 +237,78 @@
     <div class="divider"></div>
 
     <h3>Īsumā</h3>
-    <p>Carkyz ir transportlīdzekļu apkopes uzskaites lietotne, kas darbojas <strong>jūsu ierīcē</strong>. Jūsu
-       transportlīdzekļi, nobraukums un apkopes ieraksti tiek glabāti lokāli telefonā. Nav konta, nav
-       pieteikšanās un nav mākoņa sinhronizācijas. Mēs nepārdodam jūsu datus un nerādām reklāmas.</p>
+    <p>Carkyz ir transportlīdzekļu apkopes uzskaites lietotne, kas darbojas <strong>jūsu ierīcē</strong>.
+       Transportlīdzekļi, nobraukums, apkopes ieraksti, uzpildes un dokumenti tiek glabāti telefonā. Nav Carkyz
+       konta un nav Carkyz servera ar jūsu datiem. Odometra un degvielas čeku foto tiek nolasīti telefonā un
+       netiek nekur sūtīti. Mēs nepārdodam jūsu datus un nerādām reklāmas.</p>
 
     <h3>Ierīcē glabātie dati</h3>
-    <p>Viss, ko ievadāt — transportlīdzekļu nosaukumi un dati, pašreizējais nobraukums un tā vēsture, apkopes
-       mezgli un intervāli, apkopes ieraksti, izmaksas un atgādinājumu iestatījumi — tiek glabāts tikai lokālā
-       datubāzē jūsu ierīcē. Mums nav tai piekļuves.</p>
+    <p>Viss, ko ievadāt — transportlīdzekļu nosaukumi un dati, nobraukums un tā vēsture, apkopes mezgli un
+       intervāli, apkopes ieraksti, uzpildes, izmaksas, dokumenti un to termiņi, piezīmes un atgādinājumu
+       iestatījumi — tiek glabāts tikai lokālā datubāzē jūsu ierīcē. Mums nav tai piekļuves.</p>
+
+    <h3>Kamera un foto</h3>
+    <p>Varat nofotografēt odometru, lai aizpildītu nobraukumu, vai degvielas čeku, lai aizpildītu litrus, summu
+       un datumu, — ar kameru vai izvēloties vienu foto no galerijas sistēmas izvēles logā. Teksts tiek
+       atpazīts <strong>jūsu ierīcē</strong> (Apple Vision iPhone tālrunī, lietotnē iebūvētais Google ML Kit
+       Android ierīcē). Foto tiek izmantots tikai šim nolūkam, pēc nolasīšanas netiek glabāts un <strong>netiek
+       nekur sūtīts</strong> — ne mums, ne citiem. Carkyz redz tikai jūsu izvēlēto foto, nevis visu galeriju.</p>
+
+    <h3>Automātiskā kopija jūsu mākonī (pēc izvēles)</h3>
+    <p>Ja ieslēdzat automātisko kopiju, Carkyz saglabā datu kopiju kā failu <strong>jūsu</strong> mākonī: iCloud
+       Drive iPhone tālrunī, Google Drive Android ierīcē. Android ierīcē jūs pierakstāties ar Google un piešķirat
+       piekļuvi; Carkyz redz tikai failus, ko pats izveidojis (nevis visu Disku), un konta e-pasta adresi — lai
+       parādītu, kur nonāk kopija. Kopija glabājas jūsu kontā saskaņā ar Apple vai Google noteikumiem; izstrādātājs
+       to nesaņem. Automātisko kopiju var jebkurā brīdī izslēgt un kopijas izdzēst no mākoņa.</p>
+
+    <h3>Manuālās rezerves kopijas</h3>
+    <p>Varat eksportēt rezerves kopijas failu un vēlāk to importēt. Fails tiek izveidots ierīcē un nodots tikai tur,
+       kur <em>jūs</em> izvēlaties, izmantojot ierīces koplietošanas izvēlni. Izstrādātājs nekad nesaņem jūsu
+       kopijas.</p>
+
+    <h3>Pirkumi (Premium)</h3>
+    <p>Maksājumus pilnībā apstrādā App Store vai Google Play; kartes datus mēs neredzam. Lai zinātu, vai Premium
+       ir aktīvs, un atjaunotu pirkumus, lietotne izmanto
+       <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat</a> (RevenueCat, Inc.),
+       kas saņem no veikala pirkuma kvīti un nejaušu lietotnes lietotāja numuru, kas nav saistīts ar jūsu vārdu vai
+       e-pastu.</p>
 
     <h3>Avāriju un kļūdu ziņojumi (Sentry)</h3>
-    <p>Lai atrastu un labotu kļūdas, lietotne var nosūtīt anonīmus tehniskus avāriju ziņojumus pakalpojumam
-       <a href="https://sentry.io" target="_blank" rel="noopener">Sentry</a> (Functional Software, Inc.),
-       apstrāde notiek serveros Eiropas Savienībā. Ziņojumā var būt: kļūda un tās izsekojums, ierīces modelis,
-       operētājsistēmas versija un lietotnes versija. Šie ziņojumi <strong>nesatur jūsu transportlīdzekļus,
-       nobraukumu, apkopes ierakstus vai jebkuru jūsu ievadīto saturu.</strong></p>
-    <p class="muted">Avāriju ziņošanu var izslēgt lietotnes versijā ar tukšu Sentry atslēgu; kad tā izslēgta,
-       lietotne vispār neveido tīkla savienojumus.</p>
+    <p>Lai atrastu un labotu kļūdas, lietotne sūta anonīmus tehniskus avāriju ziņojumus pakalpojumam
+       <a href="https://sentry.io" target="_blank" rel="noopener">Sentry</a> (Functional Software, Inc.), apstrāde
+       notiek serveros Eiropas Savienībā. Ziņojumā var būt: kļūda un tās izsekojums, ierīces modelis, sistēmas
+       versija un lietotnes versija. Ziņojumi <strong>nesatur jūsu transportlīdzekļus, nobraukumu, ierakstus, foto
+       vai jebkuru ievadīto saturu</strong>, kā arī IP adresi un ierīces nosaukumu.</p>
+
+    <h3>Anonīma atpazīšanas statistika (var izslēgt)</h3>
+    <p>Lai redzētu, kurās valstīs čeki un odometri tiek nolasīti labi un kurās slikti, lietotne skaita
+       atpazīšanas caur to pašu Sentry. Par katru atpazīšanu tiek sūtīts tikai: vai tas bija odometrs vai čeks,
+       rezultāts (nolasīts pilnībā, daļēji vai nemaz; atstāts kā nolasīts vai labots) un tālruņa valoda un reģions
+       (piemēram, <code>de_AT</code>). <strong>Bez foto, bez teksta, bez čeka skaitļiem un bez identifikatora</strong>
+       jums vai ierīcei. To var izslēgt lietotnes izvēlnē: <em>„Anonīma atpazīšanas statistika”</em>.</p>
 
     <h3>Paziņojumi</h3>
-    <p>Apkopes atgādinājumi ir <strong>lokāli paziņojumi</strong>, kas ieplānoti jūsu ierīcē. Tie netiek sūtīti
-       no servera un satur tikai gaidāmo atgādinājuma tekstu (kurš transportlīdzeklis un kāda apkope).</p>
-
-    <h3>Rezerves kopijas</h3>
-    <p>Varat eksportēt rezerves kopijas failu un vēlāk to importēt. Kopija tiek izveidota jūsu ierīcē un nodota
-       tikai tur, kur <em>jūs</em> izvēlaties, izmantojot ierīces koplietošanas izvēlni (piemēram, failos vai
-       e-pastā). Izstrādātājs nekad nesaņem jūsu rezerves kopijas.</p>
+    <p>Apkopes atgādinājumi ir <strong>lokāli paziņojumi</strong>, kas ieplānoti jūsu ierīcē. Tie netiek sūtīti no
+       servera.</p>
 
     <h3>Kādas atļaujas pieprasām un kāpēc</h3>
     <ul>
+      <li><strong>Kamera</strong> — lai nofotografētu odometru vai degvielas čeku (tikai, kad pieskaraties
+          kamerai).</li>
+      <li><strong>Foto</strong> — lai izvēlētos vienu odometra vai čeka foto (sistēmas izvēles logs).</li>
       <li><strong>Paziņojumi</strong> — lai rādītu apkopes atgādinājumus.</li>
-      <li><strong>Precīzi modinātāji / plānošana</strong> — lai atgādinājumi nostrādā īstajā laikā.</li>
       <li><strong>Palaišana pēc pārstartēšanas</strong> — lai atjaunotu atgādinājumus pēc telefona restarta.</li>
       <li><strong>Vibrācija</strong> — paziņojumu atsauksmei.</li>
-      <li><strong>Akumulatora optimizācijas atslēgšana (neobligāti)</strong> — lai atgādinājumi būtu uzticami
-          ierīcēs ar agresīvu enerģijas taupīšanu. To var atteikt.</li>
+      <li><strong>Internets</strong> — kopijai jūsu mākonī, pirkumiem, avāriju ziņojumiem un atpazīšanas
+          statistikai.</li>
     </ul>
-    <p class="muted">Carkyz nepieprasa atrašanās vietu, kameru, mikrofonu, kontaktus vai reklāmas
-       identifikatorus.</p>
+    <p class="muted">Carkyz nepieprasa atrašanās vietu, mikrofonu, kontaktus vai reklāmas identifikatorus un
+       neizseko jūs citās lietotnēs un vietnēs.</p>
 
     <h3>Datu glabāšana un dzēšana</h3>
-    <p>Tā kā dati atrodas tikai jūsu ierīcē, jūs tos pilnībā kontrolējat: dzēsiet atsevišķus ierakstus lietotnē
-       vai atinstalējiet lietotni, lai izdzēstu visus tās datus. Sentry glabātie avāriju ziņojumi seko Sentry
-       glabāšanas termiņiem.</p>
+    <p>Dati ierīcē: dzēsiet ierakstus lietotnē vai atinstalējiet lietotni, lai izdzēstu visu. Kopijas mākonī:
+       izdzēsiet tās no iCloud Drive vai Google Drive (mape <code>Carkyz</code>). Avāriju ziņojumi un statistika
+       Sentry ir anonīmi un tiek glabāti saskaņā ar Sentry termiņiem.</p>
 
     <h3>Bērni</h3>
     <p>Carkyz ir vispārējas nozīmes rīks un nav paredzēts bērniem. Tā apzināti nevāc personas datus.</p>
